@@ -96,6 +96,7 @@ body {
     padding: 20px;
     color: #626262;
     margin: 20px 0;
+
 }
 
 .user-profile span {
@@ -177,7 +178,7 @@ body {
 
 
 .profile-container {
-    padding: 20px 15%;
+    padding: 10px 5%;
     color: #626262;
 }
 
@@ -195,14 +196,20 @@ body {
     align-items: flex-start;
     justify-content: space-between;
 }
+.pd-left{
+
+}
 
 .pd-row {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
 }
 
 .pd-img {
-    width: 100px;
+    width: 150px;
     margin-right: 20px;
     border-radius: 50%;
 }
@@ -223,14 +230,19 @@ body {
 }
 
 .pd-right button {
+    padding: 15px !important;
+    width: 45%;
     background: #1876f2;
     border: 0;
     outline: 0;
     padding: 6px 10px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 15px;
     color: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-left: 10px;
     cursor: pointer;
 }
@@ -247,6 +259,13 @@ body {
 
 .pd-right {
     text-align: right;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 400px;
+    width: 40%;
+    flex-wrap: wrap;
 }
 
 .pd-right a {
@@ -274,8 +293,15 @@ body {
 
 .post-col {
     flex-basis: 65%;
+    max-height: 1300px;
+    overflow-y: scroll;
 }
-
+.post-col ::-webkit-scrollbar {
+    width: 0px !important; /* make scrollbar invisible */
+}
+.post-col::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar */
+}
 .profile-intro {
     background: var(--bg-color);
     padding: 20px;
@@ -386,6 +412,8 @@ body {
     .pd-right button {
         margin-left: 0;
         margin-right: 10px;
+         margin: 5px;
+        width: 80%;
     }
     .pd-row div h3 {
         font-size: 16px;
