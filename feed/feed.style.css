@@ -1,0 +1,105 @@
+/* CSS for post header */
+.post_header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* CSS for avatar */
+.avatar {
+    width: 60px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+    border-radius: 50%; /* Make it round */
+    margin-right: 10px; /* Adjust spacing */
+}
+
+/* CSS for name */
+.name {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    font-size: 18px; /* Increase font size */
+}
+
+/* CSS for page body */
+.page_body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CSS for side bars */
+.side-barre {
+    width: 20%;
+}
+
+/* CSS for posts list container */
+.posts_list_container {
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    width: 60%; /* Adjust as needed */
+    max-width: 60%; /* Limit maximum width */
+    height: 100vh; /* Set height to viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    flex-direction: column;
+}
+
+/* CSS for post item */
+.post_item_container {
+    width: 90%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 400px;
+
+    margin-bottom: 70px;
+}
+
+/* CSS for image inside post item */
+.post_item_container .post_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* CSS for reaction and comments container */
+.reaction_and_comments_container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+/* CSS for reactions */
+.reactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CSS for reaction icons */
+.reactions span {
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+/* CSS for reaction count */
+.reactions span i {
+    margin-right: 5px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .side-barre {
+        display: none; /* Hide side bars on smaller screens */
+    }
+
+    .posts_list_container {
+        width: 100%; /* Set to 100% on smaller screens */
+        max-width: none; /* Remove maximum width */
+    }
+}
